@@ -3,7 +3,7 @@
 @import 'reset';
 @import 'mixin';
 @import 'variables';
-@import 'vendor';
+// @import 'vendor';
 @import 'icons';
 @import 'buttons';
 @import 'typography';
@@ -15,7 +15,7 @@
 
 body{
     font: 400 2.1rem/3.4rem Arial, sans-serif;
-    color: $000;
+    color: #000;
     background: #f0f0f0;
 
     @include bp(md){
@@ -42,17 +42,16 @@ body{
     flex-direction: column;
 }
 .container{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0 auto;
     width: 100%;
     @include bp(xxl-up){
-        max-width: 1230px;
+        max-width: 1220px;
     }
     @include bp(md){
     }
 }
-
 .pos-rel{
     position: relative;
     z-index: 1;
@@ -61,55 +60,76 @@ body{
     display: block;
     max-width: 100%;
 }
+.section{
+    padding: 5.7rem 0 7.3rem;
+}
 .bg{
     &_primary{
         background: $primary;
     }
+    &_danger{
+        background: $danger;
+    }
+    &_dark{
+        background: #0e1515;
+        color: #fff;
+    }
+    &_black{
+        background: #000;
+        color: #fff;
+        .text_light{
+            color: #777777;
+        }
+    }
+    &_light{
+        background: #eeeeee;
+    }
 }
 .w-100{
     width: 100%!important;
-    &_lg{
-        @include bp(lg-up){
-            width: 100%;
-        }
-    }
-    &_md{
-        @include bp(md){
-            width: 100%;
-        }
-    }
-    &_sm{
-        @include bp(sm){
-            width: 100%;
-        }
-    }
 }
 .row{
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
     @include bp(sm){
 
     }
     & > *{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         @include bp(sm){
 
         }
     }
 }
-
+.zoom-link{
+    display: block;
+    overflow: hidden;
+    &:hover{
+        img{
+            transform: scale(1.2);
+        }
+    }
+    img{
+        transition: all 0.5s ease-out;
+    }
+}
 
 // swiper
 .swiper{
     &-pagination{
+        position: static;
+        margin: 1.7rem 0;
         &-bullet{
-            width: 0.6rem;
-            height: 0.6rem;
-            margin: 0 0.4rem;
+            width: 1.4rem;
+            height: 1.4rem;
+            margin: 0 0.75rem!important;
             opacity: 1;
+            border-radius: 0;
+            background: #9a9a9a;
+            transition: all 0.3s ease-out;
             &:hover, &-active{
-                background: $primary!important;
+                background: $danger;
             }
         }
     }
@@ -120,7 +140,7 @@ body{
 
 
 @import 'form';
-// @import 'header';
+@import 'header';
 @import 'home';
 // @import 'footer';
 

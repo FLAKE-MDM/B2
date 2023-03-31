@@ -24,10 +24,10 @@
         &:disabled{
             background: #E8E8E8;
             border-color: #E8E8E8;
-            color: $black;
+
         }
         &:focus{
-            border-color: $black;
+
         }
         &_date{
             background: url(../img/icons/calendar.svg) 94% 50% no-repeat;
@@ -109,10 +109,10 @@
             margin-right: 1.2rem;
         }
         &:hover{
-            border-color: $primary;
+
         }
         &:checked{
-            border-color: $primary;
+
             border-width: 8px;
         }
     }
@@ -184,7 +184,6 @@ textarea.form-control_text{
         text-align: center;
         width: 100%;
         border: none;
-        color: $black;
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 2.3rem;
@@ -210,7 +209,6 @@ textarea.form-control_text{
             position: absolute;
             width: 1.4rem;
             height: 0.2rem;
-            background: $black;
             transition: all 0.3s ease-out;
             border-radius: 3px;
         }
@@ -218,9 +216,9 @@ textarea.form-control_text{
             transform: rotate(90deg);
         }
         &:hover{
-            border-color: $primary;
+
             &:before, &:after{
-                background: $primary;
+
             }
         }
     }
@@ -248,7 +246,7 @@ textarea.form-control_text{
             padding: 2.4rem 1.4rem 2.4rem 1.2rem;
         }
         &.active{
-            background: rgba($primary, 0.1);
+
         }
         P{
             margin: 0.4rem 0 0;
@@ -316,16 +314,15 @@ textarea.form-control_text{
             margin-bottom: 2rem;
         }
         &:hover, &.fake-select__item_active{
-            color: $primary;
+
         }
     }
     &__link{
         white-space: nowrap;
         &.show{
-            border-color: $black;
         }
         &.active{
-            color: $black;
+
         }
         &::after, &::before{
             @include bp(md-up){
@@ -357,14 +354,14 @@ textarea.form-control_text{
     .ui-slider-handle{
         width: 1.2rem;
         height: 1.2rem;
-        background: $black;
+
         top: -0.5rem;
         border-radius: 50%;
         border: none;
     }
     .ui-slider-range{
         height: 0.2rem;
-        background: $black;
+
     }
 }
 .range{
@@ -375,9 +372,9 @@ textarea.form-control_text{
         right: 0.5rem;
     }
     &_primary{
-        background: $primary;
+
         .ui-slider-handle{
-            background: $primary;
+
         }
         .ui-slider-range{
             background: #CBCBCB
@@ -438,16 +435,14 @@ textarea.form-control_text{
     background-size: contain;
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
-    background: $primary;
-    border-color: $primary;
+
 }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
     color: #fff;
 }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
-    background: rgba($primary, 0.2);
-    border-color: $primary;
-    color: $black;
+
+
 }
 
 // wrap-pass

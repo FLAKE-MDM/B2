@@ -132,7 +132,6 @@
       font-size: 1.6rem;
       padding: 2.5rem 2rem 2.3rem;
       text-align: center;
-      color: $primary;
       display: block;
       &.active{
         display: none;
@@ -291,7 +290,7 @@
     line-height: 2.4rem!important;
   }
   @include bp(sm){
-      line-height: 2.1rem!important;  
+      line-height: 2.1rem!important;
   }
 }
 
@@ -378,7 +377,7 @@
     opacity: 0;
   }
   &:hover{
-    border-color: $primary;
+
     &::after{
       opacity: 0;
     }
@@ -406,7 +405,6 @@
       }
       &_primary{
         @include bp(md){
-          border: 1px solid $primary;
           border-radius: 0;
         }
       }

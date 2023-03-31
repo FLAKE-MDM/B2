@@ -1,24 +1,35 @@
 a{
     transition: all 0.3s ease-out;
     text-decoration: none;
-    color: $black;
+    color: $danger;
     &:hover{
-        // color: $secondary;
+        color: darker($danger, 10%);
     }
 }
-// .link_underline{
-//     display: inline-block;
-//     padding-bottom: 0.8rem;
-//     border-bottom: 1px solid $primary;
-//     &:hover{
-//         text-decoration: none!important;
-//         border-color: transparent;
-//     }
-// }
-p{
-    margin-bottom: 1.6rem;
+.link_underline{
+    display: inline-block;
+    border-bottom: 2px solid $danger;
+    line-height: 1.1;
+    &:hover{
+        text-decoration: none!important;
+        border-color: transparent;
+    }
 }
+p{
+    margin-bottom: 3.4rem;
+}
+
 .title{
+    &_main{
+        font: 400 7.2rem/1.2 Tahoma, sans-serif;
+    }
+    font-size: 4.4rem;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 4.5rem;
+    letter-spacing: 0.14rem;
     &_size{
         &-xs{
             
@@ -38,20 +49,30 @@ p{
     }
 
 }
+.mb{
+    &_md{
+        margin-bottom: 6rem;
+    }
+    &_lg{
+        margin-bottom: 7.5rem;
+    }
+}
 .text{
     &_upper{
         text-transform: uppercase;
     }
-    // size
+    // size 16 18 24
     &_size{
         &-xs{
-            
+            font-size: 1.6rem;
         }
         &-sm{
-            
+            font-size: 1.8rem;
+            line-height: 3rem;
         }
         &-md{
-            
+            font-size: 2.4rem;
+            line-height: 3.4rem;
         }
         &-lg{
             
@@ -64,21 +85,18 @@ p{
     &_primary{
         color: $primary;
     }
-    &_success{
-        color: $success;
+    &_inversion{
+        color: #fff;
     }
-    &_warning{
-        color: $warning;
+    &_dark{
+        color: $dark;
     }
-    &_danger{
-        color: $danger;
+    &_light{
+        color: $light;
     }
     // weight
     &_normal{
         font-weight: 400;
-    }
-    &_mediumbold{
-        font-weight: 500;
     }
     &_bold{
         font-weight: 700;
@@ -97,6 +115,9 @@ p{
     }
     &_right{
         text-align: right!important;
+    }
+    &_styling{
+        font-family: Tahoma, sans-serif;
     }
 }
 

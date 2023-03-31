@@ -4,20 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CannStyle</title>
+    <title>Каникулы с БИ-2 ONLINE</title>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/flip.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body_home">
     <div class="wrap">
         <!-- header -->
         <header class="header">
-            <div class="container">
-                
+            <div class="container header__content">
+                <div class="d-flex align-content-center">
+                    <a href="index.html" class="logo"><img src="img/logo.png" alt="" class="img-fluid"></a>
+                    <nav class="navbar" id="navbar">
+                        <ul class="nav-list d-lg-flex">
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">БИЛЕТЫ</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">О КОНЦЕРТЕ</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">ПРОГРАММА</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">КЛИПЫ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-list d-flex">
+                        <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
+                        <a href="#" class="social-list__item icon icon-fb" target="_blank"></a>
+                        <a href="#" class="social-list__item icon icon-ins" target="_blank"></a>
+                        <a href="#" class="social-list__item icon icon-yt" target="_blank"></a>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- /header -->
+        <!-- preview -->
+        <div class="preview">
+            <div class="container">
+                <h1 class="title_main text_center text_inversion">Каникулы с <strong>БИ-2</strong> <span class="text_primary">ONLINE</span></h1>
+                <div class="preview__date"><img src="img/date.png" alt="20 апреля 2023" class="img-fluid"></div>
+                <div class="preview__place">
+                    <div class="place">
+                        <div class="place__inside text_upper text_styling text_center">
+                            <div class="text_primary text_right">Стрим концерта</div>
+                            <div class="text_bold place__title">Marti Myra</div>
+                            <div class="d-flex align-items-center"><span class="icon icon-pin place__icon"></span>Кемер, Турция</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /preview -->
+        <!-- timer-section -->
+        <div class="container">
+            <div class="timer-section">
+                <div class="text_size-md text_bold text_dark timer-section__title">До начала концерта</div>
+                <div class="d-md-flex">
+                    <div class="tick" data-did-init="handleTickInit">
+                        <div data-repeat="true" data-layout="horizontal center fit" data-transform="preset(d, h, m, s) -> delay">
+                            <div class="tick-group">
+                                <div class="tick-value" data-key="value"  data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                    <span data-view="flip"></span>
+                                </div>
+                                <span data-key="label" data-view="text"class="tick-label"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timer-section__text text_center">
+                        <a href="#" class="btn">КУПИТЬ БИЛЕТ</a>
+                        <div class="d-flex justify-content-center align-items-center count-block">
+                            Осталось <div class="count">14</div> билетов
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /timer-section -->
+        <!-- about-section -->
+        <div class="about-section">
+            <div class="container">
+                <div class="title">О концерте</div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="swiper about-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/content/slide-1.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="swiper-slide"><img src="img/content/slide-2.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="swiper-slide"><img src="img/content/slide-3.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="swiper-slide"><img src="img/content/slide-4.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="swiper-slide"><img src="img/content/slide-5.jpg" alt="" class="w-100 d-block"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>С 19 по 23 апреля на лазурном берегу Средиземного моря в турецком городе Кемер состоится незабываемый концерт группы БИ-2 в пятизвездочном отеле Marti Myra. Стоимость билетов на двоих от 195 200 рублей (2760 USD). Мероприятие будет длится 5 дней для тех, кто непосредственно будет в отеле. Сам концерт от группы БИ-2 пройдет 20 числа!</p>
+                    </div>
+                </div>
+                <div class="text-block bg_danger text_inversion">По причине того, что ВСЕ билеты на концерт в отель Marti Myra были раскуплены в течении 4х суток после старта продаж, мы решили дать возможность побывать на концерте в режиме онлайн! Поэтому вы можете купить билет на стрим концерта и получить те же впечатления по более дешевым ценам. Стоимость билета на стрим концерта всего 39$ (2700 рублей), места также ограничены, поторопитесь!</div>
+                <p class="text_center text_light">Для трансляции концерта в режиме онлайн будет действовать съемочная бригада с опытом более 10 лет.</p>
+                <p class="text_center about-section__btn"><a href="#" class="btn btn_dark">КУПИТЬ БИЛЕТ</a></p>
+                <div class="video-block">
+                    <div class="embed-responsive">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n0V4_PCc-Wo" title="Приглашение на концерт Би-2 12 ноября в г. Алматы" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery d-flex flex-wrap">
+                <div class="col-6 col-lg-3"><img src="img/content/photo-1.jpg" alt="" class="w-100 d-block"></div>
+                <div class="col-6 col-lg-3"><img src="img/content/photo-2.jpg" alt="" class="w-100 d-block"></div>
+                <div class="col-6 col-lg-3"><img src="img/content/photo-3.jpg" alt="" class="w-100 d-block"></div>
+                <div class="col-6 col-lg-3"><img src="img/content/photo-4.jpg" alt="" class="w-100 d-block"></div>
+            </div>
+        </div>
+        <!-- /about-section -->
+        <!-- program-section -->
+        <div class="program-section bg_black section">
+            <div class="container">
+                <div class="title mb_md">Программа</div>
+                <div class="row">
+                    <div class="col-lg-6"><img src="img/content/program.jpg" alt="Программа" class="img-fluid"></div>
+                    <div class="col-lg-6 program-section__text">
+                        <p>БИ-2 собирается устроить сюрприз! На концерте будет совершенно новая электрическая рок-программа Best Of! Дата и время проведения концерта: 20 апреля 2023 года с 19:00 по 21:00 МСК (GMT+3).</p>
+                        <p>На концерте прозвучат хиты группы и самые любимые песни Би-2 из разных альбомов, в том числе группа исполнит самые свежие синглы из грядущей пластинки, которая выйдет весной 2023.</p>
+                        <p>Каждый год команда даёт концерты по всему миру, выступая на самых разнообразных площадках – от клубов до стадионов и многотысячных опенэйров. Уникальная сценография, световые шоу и визуальные эффекты, а также живое звучание на высшем уровне давно стали фирменным стилем группы.</p>
+                    </div>
+                </div>
+                <div class="present-block text_size-md text_bold">
+                    <div class="present-block__image"><img src="img/phone.png" alt="img-fluid"></div>
+                    Купи билет на стрим и прими участие в розыгрыше iPhone 14 Pro!
+                </div>
+                <p class="text_size-xs text_light ms-lg-5 ps-lg-2 pb-2">По окончанию концерта система автоматически выберет победителя, доставка в любую страну.</p>
+                <div class="text_center"><a href="#" class="btn">КУПИТЬ БИЛЕТ</a></div>
+            </div>
+        </div>
+        <!-- /program-section -->
+        <!-- video-section -->
+        <div class="video-section bg_dark section">
+            <div class="container">
+                <div class="title mb_lg">Клипы</div>
+                <!-- video-item -->
+                <div class="video-item row">
+                    <div class="col-md-6">
+                        <a href="https://www.youtube.com/watch?v=E-L2JI4PRbc" class="zoom-link video-item__image" target="_blank">
+                            <img src="img/content/video-1.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-item__date">15.11.2022</div>
+                        <a href="https://www.youtube.com/watch?v=E-L2JI4PRbc" target="_blank" class="link_underline text_bold text_size-md">Би-2 — Аллилуйя (2022)</a>
+                    </div>
+                </div>
+                <!-- /video-item -->
+                <div class="video-item row">
+                    <div class="col-md-6">
+                        <a href="https://www.youtube.com/watch?v=_T2-h_J7UXw" class="zoom-link video-item__image" target="_blank">
+                            <img src="img/content/video-2.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-item__date">27.06.2022</div>
+                        <a href="https://www.youtube.com/watch?v=_T2-h_J7UXw" target="_blank" class="link_underline text_bold text_size-md">Би-2 — Колыбельная (2022)</a>
+                    </div>
+                </div>
+                <!-- /video-item -->
+                <div class="video-item row mb-0">
+                    <div class="col-md-6">
+                        <a href="https://www.youtube.com/watch?v=tsbg0eiKU1I" class="zoom-link video-item__image" target="_blank">
+                            <img src="img/content/video-3.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-item__date">03.02.2022</div>
+                        <a href="https://www.youtube.com/watch?v=tsbg0eiKU1I" target="_blank" class="link_underline text_bold text_size-md">Би-2 — Я никому не верю (2022)</a>
+                    </div>
+                </div>
+                <!-- /video-item -->
+            </div>
+        </div>
+        <div class="gallery d-flex flex-wrap">
+            <div class="col-6 col-lg-3"><img src="img/content/photo-5.jpg" alt="" class="w-100 d-block"></div>
+            <div class="col-6 col-lg-3"><img src="img/content/photo-6.jpg" alt="" class="w-100 d-block"></div>
+            <div class="col-6 col-lg-3"><img src="img/content/photo-7.jpg" alt="" class="w-100 d-block"></div>
+            <div class="col-6 col-lg-3"><img src="img/content/photo-8.jpg" alt="" class="w-100 d-block"></div>
+        </div>
+        <!-- /video-section -->
+        <!-- tickets-section -->
+        <div class="tickets-section section">
+            <div class="container">
+                <div class="title">Билеты</div>
+            </div>
+            <div class="bg_light">
+                <div class="container">
+                    <div class="ticket-slider swiper"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /tickets-section -->
+        <img src="img/img.jpg" alt="" class="w-100 d-block">
         <!-- footer -->
         <footer class="footer">
             <div class="container"></div>
@@ -32,6 +213,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/flip.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

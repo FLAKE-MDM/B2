@@ -1,14 +1,20 @@
 .header{
-    &__logo{
-        
+    padding: 3rem 0;
+    background: #000;
+    &__content{
+        @include bp(lg-up){
+            padding: 0 3rem;
+        }
     }
 }
 .logo{
     flex-shrink: 0;
+    width: 12.5rem;
+    margin-right: 3.4%;
     &:hover{opacity: 0.7;}
 }
 .navbar{
-    flex-grow: 1;
+    margin: 0.1rem auto -0.1rem;
 }
 .nav{
     &__close{
@@ -18,27 +24,9 @@
     }
     &-list{
         &__item{
-            margin-right: 3.2rem;
-            padding: 1.5rem 0;
-            transition: padding 0.3s ease-in-out;
-            @include bp(lg-up){
-                &>.nav-list__dropdown-menu.collapse{
-                    display: none;
-                }
-                &:hover{
-                    &>.nav-list__dropdown-menu{
-                        display: block;
-                        height: auto!important;
-                    }
-                    &>.dropdown-toggle{
-                        color: $primary;
-                        &::after{opacity: 0;}
-                        &::before{opacity: 1;}
-                    }
-                }
-            }
+            margin: 0 1.33rem;
             @include bp(lg){
-                margin-right: 2rem;
+
             }
             @include bp(md){
                 margin-right: 0;
@@ -46,13 +34,13 @@
             }
         }
         &__link{
-            font-size: 1.4rem;
-            font-weight: 500;
+            font-size: 1.6rem;
             line-height: 1.8rem;
+            font-weight: bold;
             display: inline-flex;
             color: #fff;
-            &.active{
-                color: $primary;
+            &.active, &:hover{
+                color: #ff1c3c;
             }
             @include bp(md){
                
@@ -79,7 +67,20 @@
     }
     &:hover{
         .btn-menu__item{
-            background: $primary;
+
+        }
+    }
+}
+.social-list{
+    padding-top: 0.5rem;
+    &__item{
+        width: 3.1rem;
+        height: 3rem;
+        &:not(:first-child){
+            margin-left: 1.3rem;
+        }
+        &:hover{
+            opacity: 0.7;
         }
     }
 }
