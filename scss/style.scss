@@ -1,0 +1,132 @@
+
+@import 'fonts';
+@import 'reset';
+@import 'mixin';
+@import 'variables';
+@import 'vendor';
+@import 'icons';
+@import 'buttons';
+@import 'typography';
+
+
+
+
+
+
+body{
+    font: 400 2.1rem/3.4rem Arial, sans-serif;
+    color: $000;
+    background: #f0f0f0;
+
+    @include bp(md){
+
+    }
+    @include bp(sm){
+
+    }
+
+    &.overflow-none{
+        overflow: hidden;
+        @include bp(xl-up){
+            padding-right: 1.7rem;
+            .header{
+                margin-right: 1.7rem;
+            }
+        }
+    }
+}
+.wrap{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    @include bp(xxl-up){
+        max-width: 1230px;
+    }
+    @include bp(md){
+    }
+}
+
+.pos-rel{
+    position: relative;
+    z-index: 1;
+}
+.img-fluid{
+    display: block;
+    max-width: 100%;
+}
+.bg{
+    &_primary{
+        background: $primary;
+    }
+}
+.w-100{
+    width: 100%!important;
+    &_lg{
+        @include bp(lg-up){
+            width: 100%;
+        }
+    }
+    &_md{
+        @include bp(md){
+            width: 100%;
+        }
+    }
+    &_sm{
+        @include bp(sm){
+            width: 100%;
+        }
+    }
+}
+.row{
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    @include bp(sm){
+
+    }
+    & > *{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        @include bp(sm){
+
+        }
+    }
+}
+
+
+// swiper
+.swiper{
+    &-pagination{
+        &-bullet{
+            width: 0.6rem;
+            height: 0.6rem;
+            margin: 0 0.4rem;
+            opacity: 1;
+            &:hover, &-active{
+                background: $primary!important;
+            }
+        }
+    }
+}
+
+
+
+
+
+@import 'form';
+// @import 'header';
+@import 'home';
+// @import 'footer';
+
+
+
+
+
+
+

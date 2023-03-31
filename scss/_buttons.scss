@@ -1,0 +1,108 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    padding: 1.4rem 2.45rem;
+    line-height: 2rem;
+    font-weight: 500;
+    overflow: hidden;
+    border-radius: 0;
+    transition: all 0.3s ease-out;
+    position: relative;
+    border: none;
+    &:disabled, &.disabled{
+        cursor: default;
+        pointer-events: none;
+        background: gray + 30;
+        color: gray;
+    }
+    // &_primary{
+    //     background: $primary;
+    //     color: #fff;
+    //     &:hover{
+    //         color: #fff;
+    //         background: $primary - 40;
+    //     }
+    // }
+    // &_primary-light{
+    //     color: $primary;
+    //     background: #EFE7FD;
+    //     &:hover{
+    //         color: #fff;
+    //         background: $primary;
+    //     }
+    // }
+    // &_inversion{
+    //     background: #fff;
+    //     color: $black;
+    //     &:hover{
+    //         color: #fff;
+    //         background: $primary;
+    //     }
+    //     &-lg{
+    //         @include bp(lg-up){
+    //             background: #fff;
+    //             color: $black;
+    //             &:hover{
+    //                 color: #fff;
+    //                 background: $primary;
+    //             }
+    //         }
+    //     }
+    // }
+    // &_dark{
+    //     background: $black;
+    //     color: #fff;
+    //     &:hover{
+    //         background: $primary;
+    //         color: #fff;
+    //     }
+    // }
+    // &_light{
+    //     background:#F1F1F1;
+    //     &:hover{
+    //         background: $primary;
+    //         color: #fff;
+    //     }
+    // }
+    // &_outline{
+    //     border: 1px solid #CBCBCB;
+    //     border-radius: 5px;
+    //     padding: 1.3rem 2.45rem;
+    //     &:hover{
+    //         border-color: $primary;
+    //     }
+    // }
+    // &_outline-light{
+    //     padding: 1.3rem 2.2rem;
+    //     background: #D9D9D9;
+    //     border: 1px solid #CBCBCB;
+    //     &:hover{
+    //         background: $primary;
+    //         border-color: $primary;
+    //         color: #fff;
+    //     }
+    // }
+    // &_size{
+    //     &-xs{
+    //         padding: 0.2rem 1.6rem;
+    //         border-radius: 30px;
+    //         .btn__icon{
+    //             margin: -0.2rem -1.4rem 0 11px;
+    //         }
+    //     }
+    //     &-sm{
+    //         padding: 0.9rem 1.6rem;
+    //     }
+    //     &-md{
+    //         @include bp(md-up){
+    //             min-width: 25.8rem;
+    //         }
+    //     }
+    // }
+}
+
+
