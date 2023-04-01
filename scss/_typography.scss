@@ -17,44 +17,51 @@ a{
 }
 p{
     margin-bottom: 3.4rem;
+    @include bp(sm){
+        margin-bottom: 2.4rem;
+    }
 }
-
 .title{
     &_main{
         font: 400 7.2rem/1.2 Tahoma, sans-serif;
+        @include bp(md){
+            font-size: 4.4rem;
+        }
+        @include bp(sm){
+            font-size: 2.4rem;
+        }
     }
     font-size: 4.4rem;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4.7rem;
     letter-spacing: 0.14rem;
-    &_size{
-        &-xs{
-            
-        }
-        &-sm{
-            
-        }
-        &-md{
-            
-        }
-        &-lg{
-            
-        }
-        &-xl{
-            
-        }
+    @include bp(md){
+        font-size: 3.6rem;
     }
-
+    @include bp(sm){
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 3.6rem;
+    }
 }
 .mb{
     &_md{
         margin-bottom: 6rem;
+        @include bp(md){
+            margin-bottom: 4.2rem;
+        }
     }
     &_lg{
         margin-bottom: 7.5rem;
+        @include bp(md){
+            margin-bottom: 4.1rem;
+        }
+        @include bp(sm){
+            margin-bottom: 3.3rem;
+        }
     }
 }
 .text{
@@ -65,6 +72,10 @@ p{
     &_size{
         &-xs{
             font-size: 1.6rem;
+            @include bp(sm){
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+            }
         }
         &-sm{
             font-size: 1.8rem;
@@ -73,12 +84,19 @@ p{
         &-md{
             font-size: 2.4rem;
             line-height: 3.4rem;
+            @include bp(md){
+                font-size: 2.1rem;
+            }
+            @include bp(sm){
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
         }
-        &-lg{
-            
-        }
-        &-xl{
-            
+    }
+    &_mobile-sm{
+        @include bp(sm){
+            font-size: 1.4rem;
+            line-height: 2rem;
         }
     }
     // colors

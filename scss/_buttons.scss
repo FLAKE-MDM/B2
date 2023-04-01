@@ -17,6 +17,10 @@
     transition: all 0.3s ease-out;
     position: relative;
     border: none;
+    @include bp(sm){
+        font-size: 1.6rem;
+        padding: 1.5rem 3.3rem 1.3rem;
+    }
     &:hover{
         color: #fff;
         background: darken($danger,10%);

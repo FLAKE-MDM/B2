@@ -42,24 +42,34 @@ new Swiper(".about-slider", {
   },
 });
 
+new Swiper(".tickets-slider", {
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(".nav-toggler").click(function(e){
+  e.preventDefault();
+  $("#navbar").toggleClass("show");
+  $("body").toggleClass("overflow-none");
+})
+
+
 
 // // home
 
 
-// new Swiper(".product-slider", {
-//   slidesPerView: 1,
-//   spaceBetween: 16,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 30,
-//     },
-//     1200: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//     },
-//   },
-// });
+
 
 // window.onscroll = function checkScroll() {
 //   if (document.documentElement.scrollTop < 1){

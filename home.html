@@ -15,17 +15,25 @@
         <!-- header -->
         <header class="header">
             <div class="container header__content">
-                <div class="d-flex align-content-center">
-                    <a href="index.html" class="logo"><img src="img/logo.png" alt="" class="img-fluid"></a>
-                    <nav class="navbar" id="navbar">
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn-menu d-lg-none nav-toggler"></a>
+                    <a href="index.html" class="logo header__logo"><img src="img/logo.png" alt="" class="img-fluid"></a>
+                    <nav class="navbar d-lg-flex align-items-center" id="navbar">
+                        <a href="#" class="navbar__close icon icon-close d-lg-none nav-toggler"></a>
                         <ul class="nav-list d-lg-flex">
                             <li class="nav-list__item"><a href="#" class="nav-list__link">БИЛЕТЫ</a></li>
                             <li class="nav-list__item"><a href="#" class="nav-list__link">О КОНЦЕРТЕ</a></li>
                             <li class="nav-list__item"><a href="#" class="nav-list__link">ПРОГРАММА</a></li>
                             <li class="nav-list__item"><a href="#" class="nav-list__link">КЛИПЫ</a></li>
                         </ul>
+                        <div class="social-list d-flex d-md-none">
+                            <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-fb" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-ins" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-yt" target="_blank"></a>
+                        </div>
                     </nav>
-                    <div class="social-list d-flex">
+                    <div class="social-list header__social-list d-md-flex d-none">
                         <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
                         <a href="#" class="social-list__item icon icon-fb" target="_blank"></a>
                         <a href="#" class="social-list__item icon icon-ins" target="_blank"></a>
@@ -40,13 +48,11 @@
             <div class="container">
                 <h1 class="title_main text_center text_inversion">Каникулы с <strong>БИ-2</strong> <span class="text_primary">ONLINE</span></h1>
                 <div class="preview__date"><img src="img/date.png" alt="20 апреля 2023" class="img-fluid"></div>
-                <div class="preview__place">
-                    <div class="place">
-                        <div class="place__inside text_upper text_styling text_center">
-                            <div class="text_primary text_right">Стрим концерта</div>
-                            <div class="text_bold place__title">Marti Myra</div>
-                            <div class="d-flex align-items-center"><span class="icon icon-pin place__icon"></span>Кемер, Турция</div>
-                        </div>
+                <div class="place">
+                    <div class="place__inside text_upper text_styling text_center">
+                        <div class="text_primary text_right">Стрим концерта</div>
+                        <div class="text_bold place__title">Marti Myra</div>
+                        <div class="d-flex align-items-center"><span class="icon icon-pin place__icon"></span>Кемер, Турция</div>
                     </div>
                 </div>
             </div>
@@ -99,8 +105,13 @@
                     </div>
                 </div>
                 <div class="text-block bg_danger text_inversion">По причине того, что ВСЕ билеты на концерт в отель Marti Myra были раскуплены в течении 4х суток после старта продаж, мы решили дать возможность побывать на концерте в режиме онлайн! Поэтому вы можете купить билет на стрим концерта и получить те же впечатления по более дешевым ценам. Стоимость билета на стрим концерта всего 39$ (2700 рублей), места также ограничены, поторопитесь!</div>
-                <p class="text_center text_light">Для трансляции концерта в режиме онлайн будет действовать съемочная бригада с опытом более 10 лет.</p>
-                <p class="text_center about-section__btn"><a href="#" class="btn btn_dark">КУПИТЬ БИЛЕТ</a></p>
+                <div class="d-flex justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-12">
+                        <p class="text_center text_light text_mobile-sm">Для трансляции концерта в режиме онлайн будет действовать съемочная бригада с опытом более 10 лет.</p>
+                    </div>
+                </div>
+                <p class="text_center about-section__btn d-none d-lg-block"><a href="#" class="btn btn_dark">КУПИТЬ БИЛЕТ</a></p>
+                <p class="text_center about-section__btn d-md-none"><a href="#" class="btn">КУПИТЬ БИЛЕТ</a></p>
                 <div class="video-block">
                     <div class="embed-responsive">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n0V4_PCc-Wo" title="Приглашение на концерт Би-2 12 ноября в г. Алматы" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -120,7 +131,9 @@
             <div class="container">
                 <div class="title mb_md">Программа</div>
                 <div class="row">
-                    <div class="col-lg-6"><img src="img/content/program.jpg" alt="Программа" class="img-fluid"></div>
+                    <div class="col-lg-6">
+                        <div class="program-section__image"><img src="img/content/program.jpg" alt="Программа" class="img-fluid"></div>
+                    </div>
                     <div class="col-lg-6 program-section__text">
                         <p>БИ-2 собирается устроить сюрприз! На концерте будет совершенно новая электрическая рок-программа Best Of! Дата и время проведения концерта: 20 апреля 2023 года с 19:00 по 21:00 МСК (GMT+3).</p>
                         <p>На концерте прозвучат хиты группы и самые любимые песни Би-2 из разных альбомов, в том числе группа исполнит самые свежие синглы из грядущей пластинки, которая выйдет весной 2023.</p>
@@ -131,7 +144,7 @@
                     <div class="present-block__image"><img src="img/phone.png" alt="img-fluid"></div>
                     Купи билет на стрим и прими участие в розыгрыше iPhone 14 Pro!
                 </div>
-                <p class="text_size-xs text_light ms-lg-5 ps-lg-2 pb-2">По окончанию концерта система автоматически выберет победителя, доставка в любую страну.</p>
+                <p class="text_size-xs text_light ms-lg-5 ps-lg-2 pb-2 col-md-8 program-section__info">По окончанию концерта система автоматически выберет победителя, доставка в любую страну.</p>
                 <div class="text_center"><a href="#" class="btn">КУПИТЬ БИЛЕТ</a></div>
             </div>
         </div>
@@ -193,7 +206,65 @@
             </div>
             <div class="bg_light">
                 <div class="container">
-                    <div class="ticket-slider swiper"></div>
+                    <div class="swiper tickets-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tickets-item text_center text_size-sm">
+                                    <div class="tickets-item__title d-flex align-items-center justify-content-center text_size-md text_bold">
+                                        <div class="icon icon-star-red tickets-item__icon"></div>
+                                        Стрим
+                                    </div>
+                                    <div class="tickets-item__price">39<span class="currency">$</span></div>
+                                    <div class="d-flex justify-content-center align-items-center tickets-item__count-block text_bold">
+                                        Свободных мест: <div class="count count_sm bg_danger">13</div> из 1000
+                                    </div>
+                                    <p>Доступ к стриму концерта:</p>
+                                    <p>20.04.2023, 19:00-21:00 (GMT+3)</p>
+                                    <p>Участие в розыгрыше iPhone 14 Pro</p>
+                                    <a href="#" class="btn tickets-item__btn">КУПИТЬ БИЛЕТ</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tickets-item tickets-item_disabled text_center text_size-sm">
+                                    <div class="tickets-item__title d-flex align-items-center justify-content-center text_size-md text_bold">
+                                        <div class="icon icon-star-gray tickets-item__icon"></div>
+                                        Basic в Marti Myra
+                                    </div>
+                                    <div class="tickets-item__price">2760<span class="currency">$</span></div>
+                                    <div class="d-flex justify-content-center align-items-center tickets-item__count-block text_bold">
+                                        Свободных мест: <div class="count count_sm bg_danger">0</div> из 450
+                                    </div>
+                                    <p>Проживание в 5-звёздочном отеле</p>
+                                    <p>«Deluxe Room»</p>
+                                    <p>с 19 по 23 апреля 2023 года</p>
+                                    <p>Концерт группы Би-2</p>
+                                    <p>Диджей-сеты на пляже</p>
+                                    <p>Выступления stand-up комиков</p>
+                                    <p>и многое другое</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tickets-item tickets-item_disabled text_center text_size-sm">
+                                    <div class="tickets-item__title d-flex align-items-center justify-content-center text_size-md text_bold">
+                                        <div class="icon icon-star-gray tickets-item__icon"></div>
+                                        Premium в Marti Myra
+                                    </div>
+                                    <div class="tickets-item__price">4900<span class="currency">$</span></div>
+                                    <div class="d-flex justify-content-center align-items-center tickets-item__count-block text_bold">
+                                        Свободных мест: <div class="count count_sm bg_danger">0</div> из 100
+                                    </div>
+                                    <p>Проживание в 5-звёздочном отеле</p>
+                                    <p>«Deluxe Room»</p>
+                                    <p>с 19 по 23 апреля 2023 года</p>
+                                    <p>Концерт группы Би-2</p>
+                                    <p>Диджей-сеты на пляже</p>
+                                    <p>Выступления stand-up комиков</p>
+                                    <p>и многое другое</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,7 +272,31 @@
         <img src="img/img.jpg" alt="" class="w-100 d-block">
         <!-- footer -->
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <div class="footer__content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="index.html" class="logo footer__logo"><img src="img/logo.png" alt="" class="img-fluid"></a>
+                            <div class="social-list footer__social-list d-flex">
+                                <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-fb" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-ins" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-yt" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="footer-nav text_bold text_size-xs list-styling">
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">БИЛЕТЫ</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">О КОНЦЕРТЕ</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">ПРОГРАММА</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">КЛИПЫ</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">ОПЛАТА/ВОЗВРАТ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright text_size-xs"><span class="me-2">©</span>  2023 БИ2. Политика конфиденциальности</div>
+                </div>
+            </div>
         </footer>
         <!-- /footer -->
 

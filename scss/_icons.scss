@@ -21,13 +21,30 @@
     width: 3.2rem;
     height: 4.8rem;
     background-image: url(../img/icons/pin.png);
+    @include bp(md){
+        width: 2.1rem;
+        height: 3.1rem;
+    }
+    @include bp(sm){
+        width: 1.3rem;
+        height: 2.1rem;
+    }
 }
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.png);
+.icon-star-red{
+    width: 2.3rem;
+    height: 2.3rem;
+    background-image: url(../img/icons/star-red.png);
 }
-
+.icon-star-gray{
+    width: 2.3rem;
+    height: 2.3rem;
+    background-image: url(../img/icons/star-gray.png);
+}
+.icon-close{
+    width: 2.6rem;
+    height: 2.6rem;
+    background-image: url(../img/icons/close.png);
+}
 
 
 

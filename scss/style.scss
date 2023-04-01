@@ -17,22 +17,12 @@ body{
     font: 400 2.1rem/3.4rem Arial, sans-serif;
     color: #000;
     background: #f0f0f0;
-
-    @include bp(md){
-
-    }
     @include bp(sm){
-
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
-
     &.overflow-none{
         overflow: hidden;
-        @include bp(xl-up){
-            padding-right: 1.7rem;
-            .header{
-                margin-right: 1.7rem;
-            }
-        }
     }
 }
 .wrap{
@@ -50,6 +40,10 @@ body{
         max-width: 1220px;
     }
     @include bp(md){
+        max-width: 748px;
+    }
+    @include bp(md){
+        width: 100%;
     }
 }
 .pos-rel{
@@ -68,7 +62,7 @@ body{
         background: $primary;
     }
     &_danger{
-        background: $danger;
+        background: $danger!important;
     }
     &_dark{
         background: #0e1515;
@@ -91,14 +85,16 @@ body{
 .row{
     margin-left: -3rem;
     margin-right: -3rem;
-    @include bp(sm){
-
+    @include bp(md){
+        margin-left: -1rem;
+        margin-right: -1rem;
     }
     & > *{
         padding-left: 3rem;
         padding-right: 3rem;
-        @include bp(sm){
-
+        @include bp(md){
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 }
@@ -119,7 +115,13 @@ body{
 .swiper{
     &-pagination{
         position: static;
-        margin: 1.7rem 0;
+        margin: 1.8rem 0 1.6rem;
+        @include bp(md){
+            margin-top: 1.6rem;
+        }
+        @include bp(sm){
+            margin-top: 2.5rem;
+        }
         &-bullet{
             width: 1.4rem;
             height: 1.4rem;
@@ -142,7 +144,7 @@ body{
 @import 'form';
 @import 'header';
 @import 'home';
-// @import 'footer';
+@import 'footer';
 
 
 

@@ -1,38 +1,67 @@
 .footer{
-    padding: 5.2rem 0 4.7rem;
+    padding: 5.1rem 0 4.9rem;
     margin-top: auto;
+    background: #000;
+    color: #fff;
     @include bp(md){
-        padding: 2.4rem 0 1rem;
+        padding-top: 5.2rem;
+    }
+    @include bp(sm){
+        padding: 2.5rem 0 3.2rem;
+    }
+    &__content{
+        @include bp(lg-up){
+            padding: 0 2rem;
+        }
     }
     &__logo{
-        width: 10.2rem;
-        margin-right: 4.2%;
+        margin-top: 0.7rem;
     }
     &-nav{
-        .nav-list__item{
-            margin-right: 3.35rem;
-            padding: 1.2rem 0;
+        line-height: 2.8rem;
+        @include bp(md){
+            padding-left: 0.2rem;
         }
-        .circle-arrow{
-            top: -0.1rem;
-        }
-    }
-    &__phone{
-        margin: 0.5rem 0 0;
         @include bp(sm){
-            align-items: center;
-            margin: 0;
-            display: inline-flex;
+            line-height: 2.4rem;
+            margin-bottom: 2.4rem;
         }
-        .icon{
-            margin-right: 1.7rem;
-            @include bp(sm){
-                margin-right: 1.2rem;
+        &__link{
+            color: #fff;
+            &:hover{
+                text-decoration: underline;
+                color: #fff;
             }
         }
     }
     &__social-list{
-        margin: 0.3rem 0 0 4rem;
+        margin: 4.7rem 0 4.1rem;
+        @include bp(sm){
+            margin: 2.7rem 0 2.5rem;
+        }
+    }
+}
+.list-styling{
+    &__item{
+        padding-left: 2.2rem;
+        position: relative;
+        @include bp(sm){
+            padding-left: 2rem;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0.8rem;
+            left: 0;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: url(../img/icons/star-primary.png) 0 0 no-repeat;
+            background-size: contain;
+            @include bp(sm){
+                top: 0.6rem;
+            }
+        }
     }
 }
 

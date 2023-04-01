@@ -3,9 +3,25 @@
     background: #0e1515 url(../img/preview.jpg) 50% 50% no-repeat;
     background-size: cover;
     padding: 2.1rem 0 17.2rem;
+    @include bp(md){
+        padding: 1.9rem 0 6.8rem;
+    }
+    @include bp(sm){
+        padding: 1rem 0 0;
+        background-size: auto 96%;
+        background-position: 49.6% 1.4rem;
+    }
     &__date{
         width: 17.3rem;
         margin: 7.3rem 4.7rem 6.2rem auto;
+        @include bp(md){
+            margin: 4.4rem 1rem 4rem auto;
+            width: 11.1rem;
+        }
+        @include bp(sm){
+            margin: 0.9rem -0.7rem 10.7rem auto;
+            width: 6.8rem;
+        }
     }
 }
 .place{
@@ -21,6 +37,18 @@
     box-shadow: 6px 6px 11px 0px rgba(0,0,0,0.49);
     -webkit-box-shadow: 6px 6px 11px 0px rgba(0,0,0,0.49);
     -moz-box-shadow: 6px 6px 11px 0px rgba(0,0,0,0.49);
+    @include bp(md){
+        font-size: 2.6rem;
+        line-height: 3.7rem;
+        margin-left: -1.2rem;
+        width: 27.6rem;
+    }
+    @include bp(sm){
+        font-size: 1.55rem;
+        line-height: 2.2rem;
+        margin-left: -0.5rem;
+        width: 16.6rem;
+    }
     &:before{
         content: '';
         display: block;
@@ -33,54 +61,131 @@
         background: url(../img/icons/star-white.png) 0 0 no-repeat;
         background-size: contain;
         transform: skew(15deg) rotate(-6deg);
+        @include bp(md){
+            margin: -2rem -1.2rem 0 0;
+            width: 3.3rem;
+            height: 3.3rem;
+        }
+        @include bp(sm){
+            margin: -1.1rem -0.8rem 0 0;
+            width: 2rem;
+            height: 2.3rem;
+        }
     }
     &__inside{
         transform: skew(15deg);
         padding: 1.6rem 2.1rem 2.4rem 1.9rem;
+        @include bp(md){
+            padding: 0.9rem 1.3rem 1.5rem 1.2rem;
+        }
+        @include bp(sm){
+            padding: 0.6rem 0.9rem 0.8rem 0.8rem;
+        }
     }
     &__icon{
         margin-right: 1.4rem;
+        @include bp(md){
+            margin-right: 0.9rem;
+        }
+        @include bp(sm){
+            margin: 0 0.5rem 0 -0.1rem;
+        }
     }
     &__title{
         font-size: 5.2rem;
         margin-bottom: 0.9rem;
+        @include bp(md){
+            font-size: 3.3rem;
+            margin-bottom: 0.7rem;
+        }
+        @include bp(sm){
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
     }
 }
 
 // timer
 .timer-section{
-    margin: -12rem 7.1% 5.2rem;
+    margin: -12rem 0 5rem;
     border: 6px solid $danger;
     background: #ffffff;
-    padding: 3.1rem 6.9%;
+    padding: 3.1rem 6.9% 3.2rem;
+    position: relative;
+    @include bp(xl-up){
+        margin-left: 7.15%;
+        margin-right: 7.15%;
+    }
+    @include bp(md){
+        margin: -3.4rem -2rem 4.1rem;
+        padding: 3.1rem 1.3rem 3.1rem;
+    }
+    @include bp(sm){
+        margin: 0 -1rem 3.6rem;
+        padding: 2.5rem 1.3rem 2.6rem;
+    }
     &__title{
         margin-bottom: 1rem;
+        @include bp(sm){
+            margin: 0 0.2rem 0.5rem;
+        }
     }
     &__text{
         margin-left: auto;
         padding-top: 0.1rem;
+        @include bp(sm){
+            margin-top: 2.7rem;
+        }
     }
 }
 .count{
     color: #fff;
     background: #000;
-    padding: 0.3rem 0.65rem;
+    padding: 0.4rem 0.65rem 0.3rem;
     margin: 0 1.1rem;
+    @include bp(sm){
+        padding: 0.4rem 0.5rem 0.4rem;
+        margin: 0 0.9rem;
+    }
+    &_sm{
+        padding: 0.2rem 0.5rem 0.1rem;
+        margin: 0 0.5rem;
+    }
     &-block{
         margin-top: 1.6rem;
+        @include bp(sm){
+            margin-top: 1.3rem;
+        }
     }
 }
 .tick{
     padding: 0 0.1rem;
     flex-shrink: 0;
+    @include bp(sm){
+        display: flex;
+        justify-content: center;
+    }
     &-label {
         color: #838383;
         text-align:center;
         font-size: 2.1rem;
+        display: block!important;
+        @include bp(sm){
+            font-size: 1.3rem;
+        }
     }
     &-group {
         margin-right: 3rem;
         text-align:center;
+        @include bp(md){
+            margin-right: 2rem;
+        }
+        @include bp(sm){
+            margin-right: 1.25rem;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
     }
     &-flip{
         margin: 0;
@@ -91,9 +196,15 @@
         padding-right: 0.9rem;
         text-align: left;
         line-height: 1.54;
+        @include bp(sm){
+            padding-right: 0.5rem;
+        }
         &:first-child{
             padding: 0 0 0 0.9rem;
             text-align: right;
+            @include bp(sm){
+                padding-left: 0.5rem;
+            }
         }
     }
     &-flip-panel{
@@ -105,7 +216,13 @@
         display: flex;
         font-size: 7rem;
         position: relative;
-        margin-bottom: 0.55rem;
+        margin-bottom: 0.7rem;
+        @include bp(sm){
+            font-size: 4.2rem;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 0.4rem;
+        }
         &:before{
             content: '';
             display: block;
@@ -121,6 +238,9 @@
             width: 0;
             height: 0;
             margin: 0 auto;
+            @include bp(sm){
+                border-width: 13px 4px;
+            }
         }
     }
     &-credits{
@@ -136,10 +256,19 @@
     &-section{
         &__btn{
             padding-top: 0.7rem;
+            @include bp(sm){
+                padding-top: 1.4rem;
+            }
         }
     }
     &-slider{
-        margin-top: 0.9rem;
+        margin-top: 0.8rem;
+        @include bp(md){
+            margin: 0 10.8% 0.7rem;
+        }
+        @include bp(sm){
+            margin: 0 0 0.7rem;
+        }
     }
 }
 .text-block{
@@ -147,6 +276,14 @@
     position: relative;
     overflow: hidden;
     margin: 1.9rem 0 3.9rem;
+    @include bp(md){
+        margin: 0.9rem 0 3.6rem;
+        padding: 3.2rem 3.5rem 3.6rem 2.9rem;
+    }
+    @include bp(sm){
+        margin: 0.7rem -1rem 1.9rem;
+        padding: 2.3rem 1.3rem 2.4rem;
+    }
     &:before{
         content: '';
         display: block;
@@ -157,10 +294,21 @@
         height: 7.3rem;
         background: url(../img/icons/star.png) 0 0 no-repeat;
         background-size: contain;
+        @include bp(sm){
+            right: -0.6rem;
+            width: 3.1rem;
+            height: 3.1rem;
+        }
     }
 }
 .video-block{
     margin: 5.3rem 10% 7.7rem;
+    @include bp(md){
+        margin: 1rem 0 6rem;
+    }
+    @include bp(sm){
+        margin: 4.5rem 0 4.6rem;
+    }
 }
 .embed-responsive{
     position: relative;
@@ -182,15 +330,56 @@
 
 // program-section
 .program-section{
+    @include bp(md){
+        padding: 4.5rem 0 6.1rem;
+    }
+    @include bp(sm){
+        padding-bottom: 4.6rem;
+    }
     &__text{
         padding-top: 1.4rem;
+    }
+    &__image{
+        @include bp(md){
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2.7rem;
+        }
+        @include bp(sm){
+            margin-bottom: 1.2rem;
+        }
+    }
+    &__info{
+        @include bp(lg){
+            line-height: 2rem;
+        }
+        @include bp(md){
+            margin-bottom: 5.2rem;
+        }
+        @include bp(sm){
+            line-height: 1.7rem;
+            font-weight: bold;
+            letter-spacing: -0.05rem;
+            margin-bottom: 4.2rem;
+        }
     }
 }
 .present-block {
     position: relative;
     z-index: 1;
     margin: 14.5rem 0 1.7rem;
-    padding: 3rem 27rem 26px 36px;
+    padding: 3rem 27rem 2.6rem 3.6rem;
+    @include bp(md){
+        font-size: 2.1rem;
+        margin: 9.8rem 0 1.8rem -1px;
+        padding: 1.1rem 27rem 1.1rem 0;
+    }
+    @include bp(sm){
+        padding: 0;
+        margin: -2.2rem 0 1.5rem;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+    }
     &:before{
         content: '';
         display: block;
@@ -201,25 +390,160 @@
         background: $danger;
         left: -1000%;
         right: -1000%;
+        @include bp(sm){
+            display: none;
+        }
     }
     &__image {
         position: absolute;
         right: 3.2rem;
         bottom: -5.2rem;
+        @include bp(md){
+            right: -0.1rem;
+            bottom: -5.3rem;
+        }
+        @include bp(sm){
+            position: static;
+            width: 55%;
+            width: 15.3rem;
+            margin: 0 -0.6rem 1.3rem auto;
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                z-index: -1;
+                top: 9.7rem;
+                height: 6.4rem;
+                background: $danger;
+                left: -100%;
+                right: -100%;
+            }
+        }
+        img{
+            max-width: 100%;
+            display: block;
+        }
     }
 }
 
 // video-section
 .video{
-    padding-bottom: 6.7rem;
+    &-section{
+        padding-bottom: 6.7rem;
+        @include bp(md){
+            padding: 4rem 0 5.9rem;
+        }
+        @include bp(sm){
+            padding: 3.8rem 0 4.5rem;
+        }
+    }
     &-item{
         margin-bottom: 3rem;
+        @include bp(sm){
+            margin-bottom: 3.5rem;
+        }
         &__date{
             margin: -0.1rem 0;
+            @include bp(md){
+                margin-top: -0.2rem;
+            }
+            @include bp(sm){
+                margin: 1.5rem 0 0;
+            }
         }
     }
 }
 
+// tickets-section
+.tickets{
+    &-section{
+        background: #fff;
+        @include bp(md){
+            padding: 4.3rem 0 1.9rem;
+        }
+        @include bp(sm){
+            padding: 3.5rem 0 4rem;
+        }
+        .bg_light{
+            margin: -0.5rem 0 -0.4rem;
+            @include bp(md){
+                background: none;
+            }
+        }
+    }
+    &-slider{
+        @include bp(md){
+            margin: 0 -2rem;
+        }
+        .swiper-slide{
+            height: auto;
+            display: flex;
+        }
+    }
+    &-item{
+        flex-grow: 1;
+        padding: 2.1rem 1rem 3.7rem;
+        background: #fff;
+        @include bp(md){
+            margin-bottom: 1.3rem;
+        }
+        @include bp(sm){
+            padding: 2.4rem 1rem 2.1rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-bottom: 0;
+        }
+        &_disabled{
+            color: #787878;
+            background: none;
+            @include bp(md){
+                background: #eeeeee;
+            }
+            .count{
+                background: #787878!important;
+            }
+        }
+        &__icon{
+            margin: 0 0.7rem 0 -2.8rem;
+        }
+        &__title{
+            @include bp(md){
+                font-size: 2.4rem;
+            }
+            @include bp(sm){
+                font-size: 2.1rem;
+            }
+        }
+        &__price{
+            font-size: 8rem;
+            line-height: 1.4;
+            margin: 1.6rem 0 1rem;
+            @include bp(sm){
+                margin: 2.2rem 0 0.9rem;
+            }
+            .currency{
+                font-size: 3.8rem;
+            }
+        }
+        &__count-block{
+            margin-bottom: 2.8rem;
+            @include bp(sm){
+                font-size: 1.8rem;
+                line-height: 3rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+        p{
+            margin: 0;
+        }
+        &__btn{
+            margin-top: 4.5rem;
+            @include bp(sm){
+                margin-top: 3.5rem;
+            }
+        }
+    }
+}
 
 
 
