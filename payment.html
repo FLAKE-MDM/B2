@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каникулы с БИ-2 ONLINE</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/flip.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body_home">
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container header__content">
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn-menu d-lg-none nav-toggler"></a>
+                    <a href="index.html" class="logo header__logo"><img src="img/logo.png" alt="" class="img-fluid"></a>
+                    <nav class="navbar d-lg-flex align-items-center" id="navbar">
+                        <a href="#" class="navbar__close icon icon-close d-lg-none nav-toggler"></a>
+                        <ul class="nav-list d-lg-flex">
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">БИЛЕТЫ</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">О КОНЦЕРТЕ</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">ПРОГРАММА</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">КЛИПЫ</a></li>
+                        </ul>
+                        <div class="social-list d-flex d-md-none">
+                            <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-fb" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-ins" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-yt" target="_blank"></a>
+                        </div>
+                    </nav>
+                    <div class="social-list header__social-list d-md-flex d-none">
+                        <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
+                        <a href="#" class="social-list__item icon icon-fb" target="_blank"></a>
+                        <a href="#" class="social-list__item icon icon-ins" target="_blank"></a>
+                        <a href="#" class="social-list__item icon icon-yt" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- preview -->
+        <div class="preview">
+            <div class="container">
+                <h1 class="title_main text_center text_inversion">Каникулы с <strong>БИ-2</strong> <span class="text_primary">ONLINE</span></h1>
+                <div class="preview__date"><img src="img/date.png" alt="20 апреля 2023" class="img-fluid"></div>
+                <div class="place">
+                    <div class="place__inside text_upper text_styling text_center">
+                        <div class="text_primary text_right">Стрим концерта</div>
+                        <div class="text_bold place__title">Marti Myra</div>
+                        <div class="d-flex align-items-center"><span class="icon icon-pin place__icon"></span>Кемер, Турция</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /preview -->
+        <!-- timer-section -->
+        <div class="container">
+            <div class="timer-section">
+                <div class="d-flex justify-content-center">
+                    <div class="timer-section__inner">
+                        <div class="text_size-md text_bold text_dark timer-section__title">До начала концерта</div>
+                        <div class="tick" data-did-init="handleTickInit">
+                            <div data-repeat="true" data-layout="horizontal center fit" data-transform="preset(d, h, m, s) -> delay">
+                                <div class="tick-group">
+                                    <div class="tick-value" data-key="value"  data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                        <span data-view="flip"></span>
+                                    </div>
+                                    <span data-key="label" data-view="text"class="tick-label"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /timer-section -->
+        <!-- form-section -->
+        <div class="form-section">
+            <div class="container">
+                <div class="title mb_md">Купить билет</div>
+                <div class="form-block">
+                    <form action="#">
+                        <div class="form-group">
+                            <select type="text" class="form-control">
+                                <option value="Стрим - 39$, осталось билетов - 13">Стрим - 39$, осталось билетов - 13</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select type="text" class="form-control">
+                                <option value="Способ оплаты">Способ оплаты</option>
+                                <option value="Карта">Карта</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group_md">
+                            <input type="text" class="form-control" placeholder="Ваш E-Mail">
+                        </div>
+                        <p class="ms-2"><a href="conditions.html">Условия оплаты и возврата</a></p>
+                        <p class="text_center form-group_btn"><button class="btn btn_size-md">ОПЛАТИТЬ</button></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /form-section -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="index.html" class="logo footer__logo"><img src="img/logo.png" alt="" class="img-fluid"></a>
+                            <div class="social-list footer__social-list d-flex">
+                                <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-fb" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-ins" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-yt" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="footer-nav text_bold text_size-xs list-styling">
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">БИЛЕТЫ</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">О КОНЦЕРТЕ</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">ПРОГРАММА</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">КЛИПЫ</a></li>
+                                <li class="list-styling__item"><a href="#" class="footer-nav__link">ОПЛАТА/ВОЗВРАТ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright text_size-xs"><span class="me-2">©</span>  2023 БИ2. Политика конфиденциальности</div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/flip.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

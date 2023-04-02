@@ -24,6 +24,7 @@
     &:hover{
         color: #fff;
         background: darken($danger,10%);
+        text-decoration: none;
     }
     &:disabled, &.disabled{
         cursor: default;
@@ -39,23 +40,11 @@
             color: #fff;
         }
     }
-    // &_size{
-    //     &-xs{
-    //         padding: 0.2rem 1.6rem;
-    //         border-radius: 30px;
-    //         .btn__icon{
-    //             margin: -0.2rem -1.4rem 0 11px;
-    //         }
-    //     }
-    //     &-sm{
-    //         padding: 0.9rem 1.6rem;
-    //     }
-    //     &-md{
-    //         @include bp(md-up){
-    //             min-width: 25.8rem;
-    //         }
-    //     }
-    // }
+    &_size{
+        &-md{
+            padding: 2.2rem 7rem 1.8rem;
+        }
+    }
 }
 
 

@@ -3,7 +3,7 @@ a{
     text-decoration: none;
     color: $danger;
     &:hover{
-        color: darker($danger, 10%);
+        text-decoration: underline;
     }
 }
 .link_underline{
@@ -22,15 +22,6 @@ p{
     }
 }
 .title{
-    &_main{
-        font: 400 7.2rem/1.2 Tahoma, sans-serif;
-        @include bp(md){
-            font-size: 4.4rem;
-        }
-        @include bp(sm){
-            font-size: 2.4rem;
-        }
-    }
     font-size: 4.4rem;
     line-height: 1.2;
     text-align: center;
@@ -45,6 +36,45 @@ p{
         font-size: 2.4rem;
         letter-spacing: 0.1rem;
         margin-bottom: 3.6rem;
+    }
+    &_main{
+        font: 400 7.2rem/1.2 Tahoma, sans-serif;
+        @include bp(md){
+            font-size: 4.4rem;
+        }
+        @include bp(sm){
+            font-size: 2.4rem;
+        }
+    }
+    &_heading{
+        @include bp(sm){
+            line-height: 3.4rem;
+            letter-spacing: 0.08rem;
+            margin-bottom: 2.1rem;
+        }
+    }
+    &_size{
+        &-sm{
+            font-weight: bold;
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+            margin: 3rem 0 3.8rem;
+            @include bp(sm){
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                margin: 2.3rem 0 2.5rem;
+            }
+        }
+        &-md{
+            font-weight: bold;font-size: 3.2rem;
+            line-height: 3.4rem;
+            margin: 2.9rem 0 3.9rem;
+            @include bp(sm){
+                font-size: 2.1rem;
+                line-height: 2.4rem;
+                margin: 2.2rem 0 2.6rem;
+            }
+        }
     }
 }
 .mb{
@@ -68,7 +98,7 @@ p{
     &_upper{
         text-transform: uppercase;
     }
-    // size 16 18 24
+    // size
     &_size{
         &-xs{
             font-size: 1.6rem;
@@ -111,6 +141,9 @@ p{
     }
     &_light{
         color: $light;
+    }
+    &_black{
+        color: #000;
     }
     // weight
     &_normal{

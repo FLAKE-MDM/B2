@@ -1,0 +1,42 @@
+.image-block{
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb {
+    font-size: 1.8rem;
+    margin: 1.9rem 0 6.4rem;
+    color: #777777;
+    flex-wrap: wrap;
+    @include bp(md){
+        margin: 1.1rem 0 5.7rem;
+    }
+    @include bp(sm){
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin: 1.2rem 0 2.4rem;
+    }
+    &__item{
+        &:not(:last-child){
+            &:after{
+                content: '/';
+                display: inline-block;
+                margin: 0 5px;
+                color: #000;
+            }
+        }
+    }
+    &__link {
+        color: #000;
+    }
+}
+.content{
+    padding-bottom: 14.8rem;
+    background: #fff;
+    @include bp(md){
+        padding-bottom: 7.9rem;
+    }
+    @include bp(sm){
+        padding-bottom: 5.6rem;
+    }
+}

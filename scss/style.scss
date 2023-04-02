@@ -137,6 +137,50 @@ body{
     }
 }
 
+.list-styling{
+    &_margin{
+        margin: 0 0 3.5rem 1.5rem;
+        @include bp(md){
+            margin-left: 1.4rem;
+        }
+        @include bp(sm){
+            margin: 0 0 2.4rem 0.3rem;
+        }
+        .list-styling__item{
+            &:before{
+                top: 1.1rem;
+                left: 0.1rem;
+                @include bp(md){
+                    left: 0;
+                }
+                @include bp(sm){
+                    top: 0.6rem;
+                }
+            }
+        }
+    }
+    &__item{
+        padding-left: 2.2rem;
+        position: relative;
+        @include bp(sm){
+            padding-left: 2rem;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0.8rem;
+            left: 0;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: url(../img/icons/star-primary.png) 0 0 no-repeat;
+            background-size: contain;
+            @include bp(sm){
+                top: 0.6rem;
+            }
+        }
+    }
+}
 
 
 
@@ -145,6 +189,7 @@ body{
 @import 'header';
 @import 'home';
 @import 'footer';
+@import 'conditions';
 
 
 

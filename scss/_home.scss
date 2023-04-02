@@ -186,6 +186,11 @@
                 margin-right: 0;
             }
         }
+        .timer-section__inner &{
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
     }
     &-flip{
         margin: 0;

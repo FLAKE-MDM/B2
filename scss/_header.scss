@@ -44,23 +44,37 @@
         transform: translateX(-100%);
         padding: 9.1rem 2rem;
         text-align: center;
+        z-index: 95;
         &.show{
             transform: none;
         }
+    }
+    @include bp(sm){
+        width: 20.2rem;
+        padding-top: 9.7rem;
     }
     &__close{
         position: absolute;
         top: 1.7rem;
         right: 2.8rem;
+        @include bp(sm){
+            right: 1.7rem;
+        }
     }
 }
 .nav{
     &-list{
         margin: -0.3rem auto 0;
+        @include bp(sm){
+            margin-bottom: 3.9rem;
+        }
         &__item{
             margin: 0 1.33rem;
             @include bp(md){
                 margin: 0 0 0.4rem;
+            }
+            @include bp(sm){
+                margin-bottom: 1.4rem;
             }
         }
         &__link{
@@ -71,6 +85,7 @@
             color: #fff;
             &.active, &:hover{
                 color: #ff1c3c;
+                text-decoration: none;
             }
             @include bp(sm){
                
