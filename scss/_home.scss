@@ -126,6 +126,9 @@
     }
     &__title{
         margin-bottom: 1rem;
+        @include bp(md){
+            text-align: center;
+        }
         @include bp(sm){
             margin: 0 0.2rem 0.5rem;
         }
@@ -395,6 +398,7 @@
         background: $danger;
         left: -1000%;
         right: -1000%;
+        height: 9rem;
         @include bp(sm){
             display: none;
         }
@@ -402,10 +406,9 @@
     &__image {
         position: absolute;
         right: 3.2rem;
-        bottom: -5.2rem;
+        bottom: -4.3rem;
         @include bp(md){
             right: -0.1rem;
-            bottom: -5.3rem;
         }
         @include bp(sm){
             position: static;

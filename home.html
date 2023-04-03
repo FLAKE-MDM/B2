@@ -21,10 +21,10 @@
                     <nav class="navbar d-lg-flex align-items-center" id="navbar">
                         <a href="#" class="navbar__close icon icon-close d-lg-none nav-toggler"></a>
                         <ul class="nav-list d-lg-flex">
-                            <li class="nav-list__item"><a href="#" class="nav-list__link">БИЛЕТЫ</a></li>
-                            <li class="nav-list__item"><a href="#" class="nav-list__link">О КОНЦЕРТЕ</a></li>
-                            <li class="nav-list__item"><a href="#" class="nav-list__link">ПРОГРАММА</a></li>
-                            <li class="nav-list__item"><a href="#" class="nav-list__link">КЛИПЫ</a></li>
+                            <li class="nav-list__item"><a href="#tickets-section" class="nav-list__link">БИЛЕТЫ</a></li>
+                            <li class="nav-list__item"><a href="#about-section" class="nav-list__link">О КОНЦЕРТЕ</a></li>
+                            <li class="nav-list__item"><a href="#program-section" class="nav-list__link">ПРОГРАММА</a></li>
+                            <li class="nav-list__item"><a href="#video-section" class="nav-list__link">КЛИПЫ</a></li>
                         </ul>
                         <div class="social-list d-flex d-md-none">
                             <a href="#" class="social-list__item icon icon-vk" target="_blank"></a>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="timer-section__text text_center">
-                        <a href="#" class="btn">КУПИТЬ БИЛЕТ</a>
+                        <a href="payment.html" class="btn">КУПИТЬ БИЛЕТ</a>
                         <div class="d-flex justify-content-center align-items-center count-block">
                             Осталось <div class="count">14</div> билетов
                         </div>
@@ -84,7 +84,7 @@
         </div>
         <!-- /timer-section -->
         <!-- about-section -->
-        <div class="about-section">
+        <div class="about-section" id="about-section">
             <div class="container">
                 <div class="title">О концерте</div>
                 <div class="row">
@@ -110,11 +110,11 @@
                         <p class="text_center text_light text_mobile-sm">Для трансляции концерта в режиме онлайн будет действовать съемочная бригада с опытом более 10 лет.</p>
                     </div>
                 </div>
-                <p class="text_center about-section__btn d-none d-lg-block"><a href="#" class="btn btn_dark">КУПИТЬ БИЛЕТ</a></p>
-                <p class="text_center about-section__btn d-md-none"><a href="#" class="btn">КУПИТЬ БИЛЕТ</a></p>
+                <p class="text_center about-section__btn d-none d-lg-block"><a href="payment.html" class="btn btn_dark">КУПИТЬ БИЛЕТ</a></p>
+                <p class="text_center about-section__btn d-md-none"><a href="payment.html" class="btn">КУПИТЬ БИЛЕТ</a></p>
                 <div class="video-block">
                     <div class="embed-responsive">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n0V4_PCc-Wo" title="Приглашение на концерт Би-2 12 ноября в г. Алматы" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uUy3OWnG5Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
         </div>
         <!-- /about-section -->
         <!-- program-section -->
-        <div class="program-section bg_black section">
+        <div class="program-section bg_black section" id="program-section">
             <div class="container">
                 <div class="title mb_md">Программа</div>
                 <div class="row">
@@ -145,19 +145,19 @@
                     Купи билет на стрим и прими участие в розыгрыше iPhone 14 Pro!
                 </div>
                 <p class="text_size-xs text_light ms-lg-5 ps-lg-2 pb-2 col-md-8 program-section__info">По окончанию концерта система автоматически выберет победителя, доставка в любую страну.</p>
-                <div class="text_center"><a href="#" class="btn">КУПИТЬ БИЛЕТ</a></div>
+                <div class="text_center"><a href="payment.html" class="btn">КУПИТЬ БИЛЕТ</a></div>
             </div>
         </div>
         <!-- /program-section -->
         <!-- video-section -->
-        <div class="video-section bg_dark section">
+        <div class="video-section bg_dark section" id="video-section">
             <div class="container">
                 <div class="title mb_lg">Клипы</div>
                 <!-- video-item -->
                 <div class="video-item row">
                     <div class="col-md-6">
                         <a href="https://www.youtube.com/watch?v=E-L2JI4PRbc" class="zoom-link video-item__image" target="_blank">
-                            <img src="img/content/video-1.jpg" alt="" class="img-fluid">
+                            <img src="img/content/video-1.jpg" alt="" class="img-fluid w-100">
                         </a>
                     </div>
                     <div class="col-md-6">
@@ -169,7 +169,7 @@
                 <div class="video-item row">
                     <div class="col-md-6">
                         <a href="https://www.youtube.com/watch?v=_T2-h_J7UXw" class="zoom-link video-item__image" target="_blank">
-                            <img src="img/content/video-2.jpg" alt="" class="img-fluid">
+                            <img src="img/content/video-2.jpg" alt="" class="img-fluid w-100">
                         </a>
                     </div>
                     <div class="col-md-6">
@@ -181,7 +181,7 @@
                 <div class="video-item row mb-0">
                     <div class="col-md-6">
                         <a href="https://www.youtube.com/watch?v=tsbg0eiKU1I" class="zoom-link video-item__image" target="_blank">
-                            <img src="img/content/video-3.jpg" alt="" class="img-fluid">
+                            <img src="img/content/video-3.jpg" alt="" class="img-fluid w-100">
                         </a>
                     </div>
                     <div class="col-md-6">
@@ -200,7 +200,7 @@
         </div>
         <!-- /video-section -->
         <!-- tickets-section -->
-        <div class="tickets-section section">
+        <div class="tickets-section section" id="tickets-section">
             <div class="container">
                 <div class="title">Билеты</div>
             </div>
@@ -221,7 +221,7 @@
                                     <p>Доступ к стриму концерта:</p>
                                     <p>20.04.2023, 19:00-21:00 (GMT+3)</p>
                                     <p>Участие в розыгрыше iPhone 14 Pro</p>
-                                    <a href="#" class="btn tickets-item__btn">КУПИТЬ БИЛЕТ</a>
+                                    <a href="payment.html" class="btn tickets-item__btn">КУПИТЬ БИЛЕТ</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -269,7 +269,9 @@
             </div>
         </div>
         <!-- /tickets-section -->
-        <img src="img/img.jpg" alt="" class="w-100 d-block">
+        <video class="w-full pb-[50rem] tablet:pb-[20rem] desktop:pb-[30rem]" autoplay="" loop="" preload="none" muted="">
+            <source src="video/video__mainpage.mp4" type="video/mp4">
+        </video>
         <!-- footer -->
         <footer class="footer">
             <div class="container">
@@ -286,11 +288,11 @@
                         </div>
                         <div class="col-md-6">
                             <ul class="footer-nav text_bold text_size-xs list-styling">
-                                <li class="list-styling__item"><a href="#" class="footer-nav__link">БИЛЕТЫ</a></li>
-                                <li class="list-styling__item"><a href="#" class="footer-nav__link">О КОНЦЕРТЕ</a></li>
-                                <li class="list-styling__item"><a href="#" class="footer-nav__link">ПРОГРАММА</a></li>
-                                <li class="list-styling__item"><a href="#" class="footer-nav__link">КЛИПЫ</a></li>
-                                <li class="list-styling__item"><a href="#" class="footer-nav__link">ОПЛАТА/ВОЗВРАТ</a></li>
+                                <li class="list-styling__item"><a href="home.html#tickets-section" class="footer-nav__link">БИЛЕТЫ</a></li>
+                                <li class="list-styling__item"><a href="home.html#about-section" class="footer-nav__link">О КОНЦЕРТЕ</a></li>
+                                <li class="list-styling__item"><a href="home.html#program-section" class="footer-nav__link">ПРОГРАММА</a></li>
+                                <li class="list-styling__item"><a href="home.html#video-section" class="footer-nav__link">КЛИПЫ</a></li>
+                                <li class="list-styling__item"><a href="conditions.html" class="footer-nav__link">ОПЛАТА/ВОЗВРАТ</a></li>
                             </ul>
                         </div>
                     </div>
